@@ -18,7 +18,7 @@ public class WebpageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://github.io");
+        driver.get("https://kaushik-web-arch.github.io/cie/");
     }
 
     @Test
@@ -30,7 +30,7 @@ public class WebpageTest {
     }
 
     @Test
-    public void portfolioSectionsTest() {
+    public void portfolioValidationTest() {
         WebElement heading = driver.findElement(By.tagName("h1"));
         Assert.assertEquals(heading.getText(), "Student Personal Portfolio");
 
